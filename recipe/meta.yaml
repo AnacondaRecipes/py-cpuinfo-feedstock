@@ -19,7 +19,7 @@ build:
     - cpuinfo = cpuinfo:main
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - pip
