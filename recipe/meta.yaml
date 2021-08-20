@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - cpuinfo = cpuinfo:main
 
@@ -37,7 +37,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A module for getting CPU info with Python 2 & 3'
+  summary: A module for getting CPU info with Python 2 & 3
   dev_url: https://github.com/workhorsy/py-cpuinfo
 
 extra:
